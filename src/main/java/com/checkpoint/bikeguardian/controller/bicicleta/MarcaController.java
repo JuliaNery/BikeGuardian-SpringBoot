@@ -1,7 +1,7 @@
-package com.checkpoint.bikeguardian.controller;
+package com.checkpoint.bikeguardian.controller.bicicleta;
 
 import com.checkpoint.bikeguardian.entities.bicicleta.MarcaEntity;
-import com.checkpoint.bikeguardian.repositories.MarcaRepository;
+import com.checkpoint.bikeguardian.repositories.bicicleta.MarcaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,8 +16,8 @@ public class MarcaController {
     private MarcaRepository marcaRepository;
 
     @GetMapping
-    public List<MarcaEntity> listar{
-
+    public List<MarcaEntity> listar(){
+        return null;
     }
 
 }

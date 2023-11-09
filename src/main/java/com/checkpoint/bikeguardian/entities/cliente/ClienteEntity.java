@@ -22,5 +22,6 @@ public class ClienteEntity {
     private String emailCliente;
     @Embedded
     private Endereco endereco;
+    private String senhaCliente;
 
 }
