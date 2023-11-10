@@ -1,5 +1,6 @@
 package com.checkpoint.bikeguardian.entities.bicicleta;
 
+import com.checkpoint.bikeguardian.controller.bicicleta.DadosCadastroMarca;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -14,8 +15,11 @@ public class MarcaEntity {
     @Id
     @Column(name = "idmarca")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private Long id;
 
-    @Column(name = "nomemarca")
-    private String nome;
+    private String nomeMarca;
+
+    public MarcaEntity(DadosCadastroMarca dados) {
+        this.setNomeMarca(dados.nomeMarca());
+    }
 }

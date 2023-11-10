@@ -1,10 +1,12 @@
 package com.checkpoint.bikeguardian.entities.bicicleta;
 
+import com.checkpoint.bikeguardian.controller.bicicleta.DadosCadastroMarca;
+import com.checkpoint.bikeguardian.controller.bicicleta.DadosCadastroModelo;
 import jakarta.persistence.*;
 import lombok.*;
 
 @Data
-@Entity
+@Entity(name = "ModeloEntity")
 @Table(name = "tbmodelo")
 @NoArgsConstructor
 @AllArgsConstructor
@@ -18,4 +20,8 @@ public class ModeloEntity {
 
     @Column(name = "nomemodelo")
     private String nome;
+
+    public ModeloEntity(DadosCadastroModelo dados) {
+        this.setNome(dados.nome());
+    }
 }
