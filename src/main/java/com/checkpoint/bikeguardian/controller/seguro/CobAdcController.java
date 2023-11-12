@@ -1,10 +1,8 @@
 package com.checkpoint.bikeguardian.controller.seguro;
 
-import com.checkpoint.bikeguardian.controller.bicicleta.DTO.DadosCadastroMarca;
-import com.checkpoint.bikeguardian.controller.bicicleta.DTO.DadosDetalhamentoMarca;
-import com.checkpoint.bikeguardian.entities.bicicleta.MarcaEntity;
+import com.checkpoint.bikeguardian.controller.seguro.DTO.DadosCadastroCobAdc;
+import com.checkpoint.bikeguardian.controller.seguro.DTO.DadosDetalhamentoCobAdc;
 import com.checkpoint.bikeguardian.entities.seguro.CobAdcEntity;
-import com.checkpoint.bikeguardian.repositories.bicicleta.MarcaRepository;
 import com.checkpoint.bikeguardian.repositories.seguro.CobAdcRepository;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;

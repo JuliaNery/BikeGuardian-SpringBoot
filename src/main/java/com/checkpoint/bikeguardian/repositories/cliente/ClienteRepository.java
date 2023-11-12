@@ -8,6 +8,6 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface ClienteRepository extends JpaRepository<ClienteEntity, String> {
+public interface ClienteRepository extends JpaRepository<ClienteEntity, Long> {
 
 }

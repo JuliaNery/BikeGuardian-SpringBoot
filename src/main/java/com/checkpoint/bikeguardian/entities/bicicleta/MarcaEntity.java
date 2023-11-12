@@ -17,6 +17,7 @@ public class MarcaEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(name = "nomemarca")
     private String nomeMarca;
 
     public MarcaEntity(DadosCadastroMarca dados) {

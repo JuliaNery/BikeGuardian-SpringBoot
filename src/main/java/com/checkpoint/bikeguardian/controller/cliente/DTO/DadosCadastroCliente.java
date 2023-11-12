@@ -1,4 +1,4 @@
-package com.checkpoint.bikeguardian.controller.cliente;
+package com.checkpoint.bikeguardian.controller.cliente.DTO;
 
 import com.checkpoint.bikeguardian.entities.cliente.ClienteEntity;
 import com.checkpoint.bikeguardian.entities.endereco.DadosEndereco;
@@ -10,12 +10,12 @@ import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
 
 public record DadosCadastroCliente(
-        @NotBlank
+        @NotNull(message = "O CPF do cliente é obrigatório")
         Long cpfCliente,
         @NotBlank
         String nomeCliente,
         @NotBlank
-        String telefoneCliente,
+        String telCliente,
         @Email
         String emailCliente,
         @NotNull

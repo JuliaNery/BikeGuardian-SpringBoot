@@ -13,11 +13,11 @@ import lombok.*;
 @Setter
 public class CorEntity {
     @Id
-    @Column(name = "idmodelo")
+    @Column(name = "idcor")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "nomemodelo")
+    @Column(name = "nomecor")
     private String nome;
 
     public CorEntity(DadosCadastroCor dados) {

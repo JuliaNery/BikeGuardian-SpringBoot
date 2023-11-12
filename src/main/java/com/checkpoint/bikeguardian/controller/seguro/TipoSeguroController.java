@@ -1,5 +1,7 @@
 package com.checkpoint.bikeguardian.controller.seguro;
 
+import com.checkpoint.bikeguardian.controller.seguro.DTO.DadosCadastroTipoSeguro;
+import com.checkpoint.bikeguardian.controller.seguro.DTO.DadosDetalhamentoTipoSeguro;
 import com.checkpoint.bikeguardian.entities.seguro.TipoSeguroEntity;
 import com.checkpoint.bikeguardian.repositories.seguro.TipoSeguroRepository;
 import jakarta.validation.Valid;

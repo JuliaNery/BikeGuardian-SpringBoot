@@ -1,4 +1,4 @@
-package com.checkpoint.bikeguardian.controller.seguro;
+package com.checkpoint.bikeguardian.controller.seguro.DTO;
 
 import com.checkpoint.bikeguardian.entities.seguro.MeioPagEntity;
 

@@ -1,6 +1,6 @@
 package com.checkpoint.bikeguardian.entities.seguro;
 
-import com.checkpoint.bikeguardian.controller.seguro.DadosCadastroMeioPag;
+import com.checkpoint.bikeguardian.controller.seguro.DTO.DadosCadastroMeioPag;
 import jakarta.persistence.*;
 import lombok.*;
 

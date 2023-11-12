@@ -1,4 +1,4 @@
-package com.checkpoint.bikeguardian.controller.cliente;
+package com.checkpoint.bikeguardian.controller.cliente.DTO;
 
 import com.checkpoint.bikeguardian.entities.cliente.ClienteEntity;
 import com.checkpoint.bikeguardian.entities.endereco.DadosEndereco;
