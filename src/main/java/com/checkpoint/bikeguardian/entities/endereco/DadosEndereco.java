@@ -5,17 +5,17 @@ import jakarta.validation.constraints.Pattern;
 
 public record DadosEndereco(
         @NotBlank
-        String logradouro,
-        @NotBlank
-        String bairro,
-        @NotBlank
         @Pattern(regexp = "\\d{8}")
         String cep,
         @NotBlank
-        String cidade,
+        String logradouro,
         @NotBlank
-        String uf,
+        String numero,
+        @NotBlank
+        String bairro,
         String complemento,
         @NotBlank
-        String numero) {
+        String cidade,
+        @NotBlank
+        String uf) {
 }

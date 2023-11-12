@@ -1,6 +1,6 @@
 package com.checkpoint.bikeguardian.entities.bicicleta;
 
-import com.checkpoint.bikeguardian.controller.bicicleta.DadosCadastroMarca;
+import com.checkpoint.bikeguardian.controller.bicicleta.DTO.DadosCadastroMarca;
 import jakarta.persistence.*;
 import lombok.*;
 

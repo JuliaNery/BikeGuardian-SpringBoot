@@ -1,5 +1,6 @@
 package com.checkpoint.bikeguardian.entities.seguro;
 
+import com.checkpoint.bikeguardian.controller.seguro.DadosCadastroCobAdc;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -15,4 +16,8 @@ public class CobAdcEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idCobAdc;
     private String coberturaAdc;
+
+    public CobAdcEntity(DadosCadastroCobAdc dados) {
+        this.setCoberturaAdc(dados.coberturaAdc());
+    }
 }

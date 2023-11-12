@@ -1,6 +1,6 @@
 package com.checkpoint.bikeguardian.entities.bicicleta;
 
-import com.checkpoint.bikeguardian.controller.bicicleta.DadosCadastroCor;
+import com.checkpoint.bikeguardian.controller.bicicleta.DTO.DadosCadastroCor;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -21,6 +21,6 @@ public class CorEntity {
     private String nome;
 
     public CorEntity(DadosCadastroCor dados) {
-
+        this.setNome(dados.nome());
     }
 }

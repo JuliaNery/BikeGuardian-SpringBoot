@@ -1,4 +1,4 @@
-package com.checkpoint.bikeguardian.controller.bicicleta;
+package com.checkpoint.bikeguardian.controller.bicicleta.DTO;
 
 import com.checkpoint.bikeguardian.entities.bicicleta.CorEntity;
 

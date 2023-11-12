@@ -1,11 +1,11 @@
 --Ancient Code
---/*
---*RM552292  Julia Nery
---*RM98163  Júlia Figueiredo
---*RM552389  Isabelli Heloiza
---*RM550562  Larissa Akemi
---*RM94679  Vínicius Becker
---*/
+/*
+*RM552292  Julia Nery
+*RM98163  Júlia Figueiredo
+*RM552389  Isabelli Heloiza
+*RM550562  Larissa Akemi
+*RM94679  Vínicius Becker
+*/
 --EXCLUSÃO DE TABELAS EXISTENTES--
 DROP TABLE tbCliente CASCADE CONSTRAINTS;
 DROP TABLE tbBicicleta CASCADE CONSTRAINTS;
@@ -36,7 +36,7 @@ CREATE TABLE tbCliente(
 
 --CRIAÇÃO DA TABELA QUE GUARDARA AS MARCAS--
 CREATE TABLE tbMarca(
-    idMarca NUMBER(5)  CONSTRAINT marca_id_pk PRIMARY KEY,
+    idMarca NUMBER(5)  CONSTRAINT marca_id_pk PRIMARY KEY ,
     nomeMarca VARCHAR(30) CONSTRAINT marca_nm_nn NOT NULL
 );
 

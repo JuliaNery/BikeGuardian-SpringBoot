@@ -1,5 +1,6 @@
 package com.checkpoint.bikeguardian.entities.seguro;
 
+import com.checkpoint.bikeguardian.controller.seguro.DadosCadastroMeioPag;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -16,4 +17,7 @@ public class MeioPagEntity {
     private Long idMeioPag;
     private String nomePag;
 
+    public MeioPagEntity(DadosCadastroMeioPag dados) {
+        this.setNomePag(dados.nomeMeioPag());
+    }
 }

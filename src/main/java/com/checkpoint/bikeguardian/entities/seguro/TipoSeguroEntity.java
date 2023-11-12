@@ -1,5 +1,6 @@
 package com.checkpoint.bikeguardian.entities.seguro;
 
+import com.checkpoint.bikeguardian.controller.seguro.DadosCadastroTipoSeguro;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -17,4 +18,7 @@ public class TipoSeguroEntity {
     private String tipoSeguro;
     private Double valorTipoSeguro;
 
+    public TipoSeguroEntity(DadosCadastroTipoSeguro dados) {
+        this.setTipoSeguro(dados.tipoSeguro());
+    }
 }

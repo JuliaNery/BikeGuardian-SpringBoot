@@ -13,7 +13,7 @@ import lombok.*;
 @Setter
 public class BicicletaEntity {
     @Id
-    private Long numSerie;
+    private String numSerie;
     private Double valorNF;
     private String fotoLateral;
     private String fotoFrontal;

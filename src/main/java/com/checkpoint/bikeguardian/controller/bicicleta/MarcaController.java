@@ -1,5 +1,7 @@
 package com.checkpoint.bikeguardian.controller.bicicleta;
 
+import com.checkpoint.bikeguardian.controller.bicicleta.DTO.DadosCadastroMarca;
+import com.checkpoint.bikeguardian.controller.bicicleta.DTO.DadosDetalhamentoMarca;
 import com.checkpoint.bikeguardian.entities.bicicleta.MarcaEntity;
 import com.checkpoint.bikeguardian.repositories.bicicleta.MarcaRepository;
 import jakarta.validation.Valid;

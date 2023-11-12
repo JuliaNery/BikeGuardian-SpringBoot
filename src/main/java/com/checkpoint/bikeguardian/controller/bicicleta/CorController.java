@@ -1,9 +1,9 @@
 package com.checkpoint.bikeguardian.controller.bicicleta;
 
+import com.checkpoint.bikeguardian.controller.bicicleta.DTO.DadosCadastroCor;
+import com.checkpoint.bikeguardian.controller.bicicleta.DTO.DadosDetalhamentoCor;
 import com.checkpoint.bikeguardian.entities.bicicleta.CorEntity;
-import com.checkpoint.bikeguardian.entities.bicicleta.MarcaEntity;
 import com.checkpoint.bikeguardian.repositories.bicicleta.CorRepository;
-import com.checkpoint.bikeguardian.repositories.bicicleta.MarcaRepository;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
