@@ -9,7 +9,7 @@ import javax.swing.text.SimpleAttributeSet;
 
 @Data
 @Entity
-@Table(name = "tbmodelo")
+@Table(name = "tbseguro")
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
@@ -17,21 +17,25 @@ import javax.swing.text.SimpleAttributeSet;
 public class SeguroEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "idseguro")
     private Long idSeguro;
 
+    @Column(name = "valorseguro")
     private Double valorSeguro;
+
     @Enumerated(EnumType.STRING)
+    @Column(name = "statusseguro")
     private StatusSeguro statusSeguro;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "tbMeioPag_idMeioPag")
+    @JoinColumn(name = "tbmeiopag_idmeiopag")
     private MeioPagEntity meioPag;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "tbTipoSeguro_idTipoSeguro")
+    @JoinColumn(name = "tbtiposeguro_idtiposeguro")
     private TipoSeguroEntity tipoSeguro;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "tbBicicleta_numSerie")
+    @JoinColumn(name = "tbbicicleta_numserie")
     private BicicletaEntity bicicleta;
 }

@@ -4,6 +4,6 @@ public enum StatusSeguro {
     EM_ANALISE,
     APROVADO,
     REPROVADO,
-    CANCELADO,
+    CANCELADO;
 
 }

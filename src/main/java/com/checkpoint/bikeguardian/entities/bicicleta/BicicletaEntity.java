@@ -43,23 +43,4 @@ public class BicicletaEntity {
     @JoinColumn(name = "tbcor_idcor")
     private CorEntity cor;
 
-
-//    public BicicletaEntity(DadosCadastroBicicleta dados) {
-//        this.setNumSerie(dados.numSerie());
-//        this.setValorNF(dados.valorNF());
-//        if (!dados.qtdWatts().describeConstable().isEmpty()){
-//            this.setQtdWatts(dados.qtdWatts());
-//        }
-//        if (!dados.fotoFrontal().isEmpty() || !dados.fotoFrontal().isBlank()){
-//            this.setFotoFrontal(dados.fotoFrontal());
-//        }
-//        if (!dados.fotoLateral().isEmpty() || !dados.fotoLateral().isBlank()){
-//            this.setFotoLateral(dados.fotoLateral());
-//        }
-//        if (!dados.fotoTraseira().isEmpty() || !dados.fotoTraseira().isBlank()){
-//            this.setFotoFrontal(dados.fotoTraseira());
-//        }
-//
-//        this.setCliente(dados.idCliente());
-//    }
 }
