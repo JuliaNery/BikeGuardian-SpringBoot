@@ -1,11 +1,9 @@
 package com.checkpoint.bikeguardian.entities.seguro;
 
 import com.checkpoint.bikeguardian.controller.seguro.DTO.DadosCadastroTipoSeguro;
-import com.checkpoint.bikeguardian.controller.seguro.Enum.TipoSeguro;
+import com.checkpoint.bikeguardian.enums.TipoSeguro;
 import jakarta.persistence.*;
 import lombok.*;
-
-import javax.lang.model.element.Name;
 
 @Data
 @Entity

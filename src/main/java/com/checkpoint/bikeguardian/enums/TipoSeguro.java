@@ -1,4 +1,4 @@
-package com.checkpoint.bikeguardian.controller.seguro.Enum;
+package com.checkpoint.bikeguardian.enums;
 
 public enum TipoSeguro {
     PEDAL_ESSENCIAL,

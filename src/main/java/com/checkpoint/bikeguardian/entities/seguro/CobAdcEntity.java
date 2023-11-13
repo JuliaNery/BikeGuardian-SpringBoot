@@ -1,7 +1,7 @@
 package com.checkpoint.bikeguardian.entities.seguro;
 
 import com.checkpoint.bikeguardian.controller.seguro.DTO.DadosCadastroCobAdc;
-import com.checkpoint.bikeguardian.controller.seguro.Enum.CoberturaAdc;
+import com.checkpoint.bikeguardian.enums.CoberturaAdc;
 import jakarta.persistence.*;
 import lombok.*;
 

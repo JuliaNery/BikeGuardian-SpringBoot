@@ -1,7 +1,7 @@
 package com.checkpoint.bikeguardian.entities.seguro.validacoes;
 
 import com.checkpoint.bikeguardian.controller.seguro.DTO.DadosCadastroSeguro;
-import com.checkpoint.bikeguardian.controller.seguro.Enum.TipoSeguro;
+import com.checkpoint.bikeguardian.controller.seguro.DTO.DadosDetalhamentoSeguro;
 import com.checkpoint.bikeguardian.entities.ValidacaoException;
 import com.checkpoint.bikeguardian.entities.seguro.SeguroEntity;
 import com.checkpoint.bikeguardian.enums.StatusSeguro;
@@ -15,16 +15,16 @@ import org.springframework.stereotype.Service;
 @Service
 public class ValidacaoSeguro {
     @Autowired
-    SeguroRepository seguroRepository;
+    private SeguroRepository seguroRepository;
 
     @Autowired
-    MeioPagRepository meioPagRepository;
+    private MeioPagRepository meioPagRepository;
 
     @Autowired
-    TipoSeguroRepository tipoSeguroRepository;
+    private TipoSeguroRepository tipoSeguroRepository;
 
     @Autowired
-    BicicletaRepository bicicletaRepository;
+    private BicicletaRepository bicicletaRepository;
 
     public DadosDetalhamentoSeguro cadastrar(DadosCadastroSeguro dados){
         var meioPag = meioPagRepository.getReferenceById(dados.idMeioPag());
@@ -32,6 +32,9 @@ public class ValidacaoSeguro {
         var bike = bicicletaRepository.getReferenceById(dados.idBicicleta());
         if(bike.getValorNF() > 10000.00){
             throw new ValidacaoException("Valor da bicicleta acima do limite");
+        }
+        if (bike.getQtdWatts() > 250){
+            throw new ValidacaoException("Quantidade de watts da bicicleta acima do limite");
         }
         var valSeguro = calculaSeguro(meioPag.getNomePag(), tipoSeg.getValorTipoSeguro(), bike.getValorNF());
 

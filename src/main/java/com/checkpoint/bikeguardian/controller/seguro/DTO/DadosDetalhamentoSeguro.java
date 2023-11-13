@@ -1,4 +1,4 @@
-package com.checkpoint.bikeguardian.entities.seguro.validacoes;
+package com.checkpoint.bikeguardian.controller.seguro.DTO;
 
 import com.checkpoint.bikeguardian.entities.seguro.SeguroEntity;
 import com.checkpoint.bikeguardian.enums.StatusSeguro;

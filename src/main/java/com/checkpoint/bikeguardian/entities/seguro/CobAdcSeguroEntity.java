@@ -5,7 +5,7 @@ import lombok.*;
 
 @Data
 @Entity
-@Table(name = "tbmodelo")
+@Table(name = "tbcobadc_seguro")
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
@@ -13,17 +13,19 @@ import lombok.*;
 public class CobAdcSeguroEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "idCobAdc_Seguro")
+    @Column(name = "idcobadc_seguro")
     private Long idCobAdcSeguro;
 
+    @Column(name = "valorcobadc")
     private Double valorCobAdcSeguro;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "tbCobAdc_idCobAdc")
+    @JoinColumn(name = "tbcobadc_idcobadc")
     private CobAdcEntity cobAdc;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "tbSeguro_idSeguro")
+    @JoinColumn(name = "tbseguro_idseguro")
     private SeguroEntity seguro;
+
 
 }
