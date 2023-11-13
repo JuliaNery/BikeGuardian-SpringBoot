@@ -27,7 +27,7 @@ public class CobAdcController {
     public ResponseEntity cadastrar(@RequestBody @Valid DadosCadastroCobAdc dados, UriComponentsBuilder uriBuilder){
         var cobAdc = new CobAdcEntity(dados);
         repository.save(cobAdc);
-        var uri = uriBuilder.path("/marcas/{id}").buildAndExpand(cobAdc.getIdCobAdc()).toUri();
+        var uri = uriBuilder.path("/coberturaadc/{id}").buildAndExpand(cobAdc.getIdCobAdc()).toUri();
         return ResponseEntity.created(uri).body(new DadosDetalhamentoCobAdc(cobAdc));
     }
     @GetMapping

@@ -26,7 +26,7 @@ public class CorController {
     public ResponseEntity cadastrar(@RequestBody @Valid DadosCadastroCor dados, UriComponentsBuilder uriBuilder){
         var cor = new CorEntity(dados);
         corRepository.save(cor);
-        var uri = uriBuilder.path("/marcas/{id}").buildAndExpand(cor.getId()).toUri();
+        var uri = uriBuilder.path("/cores/{id}").buildAndExpand(cor.getId()).toUri();
         return ResponseEntity.created(uri).body(new DadosDetalhamentoCor(cor));
     }
     @GetMapping

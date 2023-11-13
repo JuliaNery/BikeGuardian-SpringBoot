@@ -14,7 +14,9 @@ import lombok.*;
 public class MeioPagEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "idmeiopag")
     private Long idMeioPag;
+    @Column(name = "nomemeiopag")
     private String nomePag;
 
     public MeioPagEntity(DadosCadastroMeioPag dados) {

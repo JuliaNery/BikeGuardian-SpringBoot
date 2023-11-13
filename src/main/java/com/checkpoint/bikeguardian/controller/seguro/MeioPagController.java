@@ -26,7 +26,7 @@ public class MeioPagController {
     public ResponseEntity cadastrar(@RequestBody @Valid DadosCadastroMeioPag dados, UriComponentsBuilder uriBuilder){
         var meioPag = new MeioPagEntity(dados);
         repository.save(meioPag);
-        var uri = uriBuilder.path("/marcas/{id}").buildAndExpand(meioPag.getIdMeioPag()).toUri();
+        var uri = uriBuilder.path("/meiopag/{id}").buildAndExpand(meioPag.getIdMeioPag()).toUri();
         return ResponseEntity.created(uri).body(new DadosDetalhamentoMeioPag(meioPag));
     }
     @GetMapping

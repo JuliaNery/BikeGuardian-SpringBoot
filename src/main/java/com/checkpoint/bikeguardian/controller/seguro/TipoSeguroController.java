@@ -26,7 +26,7 @@ public class TipoSeguroController {
     public ResponseEntity cadastrar(@RequestBody @Valid DadosCadastroTipoSeguro dados, UriComponentsBuilder uriBuilder){
         var tipoSeguro = new TipoSeguroEntity(dados);
         repository.save(tipoSeguro);
-        var uri = uriBuilder.path("/marcas/{id}").buildAndExpand(tipoSeguro.getIdTipoSeguro()).toUri();
+        var uri = uriBuilder.path("/tiposeguro/{id}").buildAndExpand(tipoSeguro.getIdTipoSeguro()).toUri();
         return ResponseEntity.created(uri).body(new DadosDetalhamentoTipoSeguro(tipoSeguro));
     }
     @GetMapping
